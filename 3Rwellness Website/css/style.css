@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+:root{
+  --blue:#1664a0;
+  --black:#444;
+  --light-color:#777;
+  --box-shadow:.5rem .5rem 0 rgba(22, 116, 160, 0.242);
+  --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+  --border:.2rem solid var(--blue);
+}
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('http://at.alicdn.com/t/font_2526200_dra74wlaxnj.woff2?t=1621069802615') format('woff2'), url('http://at.alicdn.com/t/font_2526200_dra74wlaxnj.woff?t=1621069802615') format('woff'), url('http://at.alicdn.com/t/font_2526200_dra74wlaxnj.ttf?t=1621069802615') format('truetype');
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: white;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(3, 3, 114);
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color:rgb(3, 3, 114);
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  border:var(--border);
+  border-radius: .5rem;
+  color:black;
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #fff;
+}
+
+.btn span{
+  padding:.7rem 1rem;
+  border-radius: .5rem;
+  background: var(--blue);
+  color:white;
+  margin-left: .5rem;
+}
+
+.btn:hover{
+  background: rgb(3, 3, 114);
+  color:red;
+}
+
+.btn:hover span{
+  color: var(--blue);
+  background:white;
+  margin-left: 1rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background: rgb(3, 3, 114);
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  font-family: 'Kaushan Script', cursive;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  background: blue;
+}
+
+#menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  padding: 0;
+  margin-top: 5rem;
+}
+
+.slide {
+  min-height: 93vh;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 2rem 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide .content {
+  width: 60rem;
+}
+
+.slide .content span {
+  font-size: 4rem;
+  font-family: 'Kaushan Script', cursive;
+  color: #f00;
+  display: block;
+}
+
+.slide .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Kaushan Script', cursive;
+  padding: 1rem 0;
+}
+
+.swiper-pagination-bullet {
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid black;
+  background-color: beige;
+  border-radius: 5;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: blue;
+}
+/****************Header part, Basic set and Home page end**************************************/
+
+
+/******************About Part******************/
+.about{
+  padding-top: 1rem;
+  background: white;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap:2rem;
+}
+
+.user{
+  text-align: center;
+  width: 50%;
+}
+
+.user img{
+  margin:1rem 0;
+  border:1rem solid transparent; 
+  height: 60vh;
+  width: 55vh;
+}
+
+.row .contentWrapper {
+  flex:1 1 40rem;
+  text-align: center;
+}
+
+.row .content{
+  display: inline-block;
+  text-align: left;
+}
+
+.row .content h3{
+  font-size: 3.5rem;
+  color:black;
+  line-height: 1.8;
+  padding-top: 0.5rem;
+}
+
+.row .content h3 span{
+  color:black;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+.row .content p{
+  font-size: 1.7rem;
+  color:black;
+  line-height: 1.8;
+  font-family: 'Ma Shan Zheng', cursive;
+  padding-top: 1rem;
+}
+/*About part css end*/
+
+/******************** contact part****************************/
+.contact {
+  background: rgb(3, 3, 114);
+}
+
+.contact .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  padding-left: 9%;
+  padding-top: 5rem;
+}
+
+.contact .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: red;
+  padding: 1rem 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.contact .box-container .box p {
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+  padding: 1rem 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.contact .box-container .box a {
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+  padding: 1rem 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.contact .credit {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: white;
+  border-top: 0.1rem solid #ffefd5;
+  text-transform: lowercase;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.contact .credit span {
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+}
+/*contact Part end*************************************************/
+
+/*Set up the menu max width*/
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  #menu-btn.fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .header {
+    padding: 2rem;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: green;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    font-size: 2rem;
+  }
+  .about {
+    gap: 3rem;
+  }
+  .about .image {
+    margin-top: 5rem;
+  }
+  .about .content .title {
+    font-size: 3rem;
+  }
+  .features .box-container .box.second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,61 @@
+@import url(style.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.root {
+   min-height: 100vh;
+}
+
+.titile-background {
+    text-align: center;
+    background: url(../image/heading-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.titile-background h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: rgb(3, 3, 114);
+    font-family: 'Kaushan Script', cursive;
+}
+
+.area{
+    padding-top: 1rem;
+    background: white; 
+}
+
+.area .boxcon{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top: 1rem;
+}
+
+.area .boxcon img{
+    height: 45vh;
+    width: 45vh;
+}
+
+.area .boxcon h3{
+    color:red;
+    font-size: 3.5rem;
+    font-family: 'Ma Shan Zheng', cursive;
+}
+
+.area .boxcon p{
+    color:black;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
