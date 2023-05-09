@@ -6,3 +6,5 @@ Develop a website for a small health center with project name “3Rwellness”
 ● Implemented modern web design techniques and best practices to enhance user experience and ensure seamless navigation across the website's pages, resulting in positive feedback from patients and staff.
 
 ● Utilized strong technical skills in CSS, HTML, and JavaScript to create a user-friendly and visually appealing Health Center Website that effectively communicates the center's services and supports its mission.
+
+![Home Page](https://user-images.githubusercontent.com/60770401/237029906-eb2cf874-2470-4126-b4be-c404947906c4.png)
